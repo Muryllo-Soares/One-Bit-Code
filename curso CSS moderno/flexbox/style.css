@@ -6,9 +6,15 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: lightgrey;
+
+.container{
+    background-color: black;
     height: 100vh;
+    display: flex;
+    gap: 0px 15px;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .item{
@@ -21,6 +27,11 @@ body{
     background-color: gray;
     width: 200px;
     height: 200px;
-    border: 1px solid black;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
