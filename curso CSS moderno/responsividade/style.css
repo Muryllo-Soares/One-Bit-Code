@@ -1,40 +1,30 @@
+@charset "UTF-8";
 
-.imagem{
-    width: 750px;
-    padding: 10px;
-}
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-@media (max-width:775px){
-    .imagem{
-        width: 600px;
-    }
-}
-
-@media (max-width:630px){
-    .imagem{
-        width: 500px;
-    }
-}
-
-@media (max-width:532px){
-    .imagem{
-        width: 400px;
-    }
-    p{
-        font-size: 15px;
-        text-align: center;
-    }
-}
-
-@media (max-width:432px){
+@media (min-width: 280px) and (max-width: 320px){
     .imagem {
-        width: 250px;
+        width: 270px;
+        height: auto;
     }
     p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        text-align: justify;
+    }
+}
+
+@media (min-width:321px) and (max-width:425px){
+    .imagem{
+        width: 100%;
+        height: auto;
+    }
+
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
         text-align: center;
     }
 }
+
+
+
+
