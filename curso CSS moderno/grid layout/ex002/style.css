@@ -45,6 +45,7 @@
 .item2{
     grid-area: item2;
     min-width: 250px;
+
 }
 .item3{
     grid-area: item3;
