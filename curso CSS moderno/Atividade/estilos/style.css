@@ -11,7 +11,61 @@
     font-size: 20px;
 }
 
+.container{
+    min-height: 100%;
+    display: flex;
+}
 
+.header{
+    width: 100%;
+    height: 100%;
+    background-color: #292929;
+    padding: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.imgHeader{
+    width: 180px;
+}
+
+.navHeader{
+    display: flex;
+    gap: 15px;
+}
+
+.navHeader button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.navHeader button:hover{
+    border-bottom: 2px solid black;
+}
+
+.sectionTitle{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.sectionDescription{
+    color: #393939;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.content{
+    display: flex;
+}
 
 
 
