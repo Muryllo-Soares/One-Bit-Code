@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-003</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background: black;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 8fr 1fr;
+            flex: 0 1 auto;
+        }
+
+        header{
+            background-color: yellow;
+            height: 100px;
+            width: 100%;
+        }
+        
+        main{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+            
+        }
+
+        article{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 15px;
+            background-color: rgba(0, 0, 0, 0.521);
+            min-height: 150px;
+            align-items: center;
+            
+        }
+
+        .divArticle{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border: 1px solid black;
+
+            
+        }
+
+        aside{
+            min-height: 600px;
+            min-width: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            background-color: rgba(0, 0, 0, 0.356);
+        }
+
+        .divAside{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        footer{
+            background-color: chartreuse;
+            height: 100px;
+            width: 100%;
+            align-self: flex-end;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>HEADER</header>
+        <main>
+            <article>
+                <div class="divArticle"></div>
+                <div class="divArticle"></div>
+                <div class="divArticle"></div>
+                <div class="divArticle"></div>
+                <div class="divArticle"></div>
+            </article>
+            <aside>
+                <div class="divAside"></div>
+                <div class="divAside"></div>
+                <div class="divAside"></div>
+                <div class="divAside"></div>
+                <div class="divAside"></div>
+            </aside>
+        </main>
+        <footer>FOOTER</footer>
+    </div>
+    
+</body>
+</html>
