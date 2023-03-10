@@ -1,4 +1,4 @@
-
+/*
 let velocidade = 80
 
 while (velocidade > 0) {
@@ -7,3 +7,5 @@ while (velocidade > 0) {
     console.log ("Diminuindo 20 km/h");
 }
     console.log ("O carro parou!");
+*/
+
