@@ -1,4 +1,4 @@
-/* const turista = prompt("E ai turista, Qual o seu nome?");
+const turista = prompt("E ai turista, Qual o seu nome?");
 let cidades = "";
 let contagem = 0;
 
@@ -19,9 +19,4 @@ alert(
     contagem +
     "\n Cidades visitadas:\n " +
     cidades
-); */
-let contagem = 10
-while (contagem >= 0) {
-  contagem++;
-  console.log(contagem);
-}
+);
