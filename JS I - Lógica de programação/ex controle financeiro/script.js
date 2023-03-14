@@ -24,7 +24,7 @@ do {
         }
         case "3":{
         alert("Operação Finalizada!")
-        alert("Finalizando...1")
+        alert("Finalizando...")
         break
         }
         default:{
