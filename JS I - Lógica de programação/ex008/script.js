@@ -25,3 +25,12 @@ console.log(inclui)
 const indice = arr.indexOf("jantar")
 console.log(indice)
 
+const refeiçõesDia= arr.slice (0, 3)
+console.log(refeiçõesDia)
+console.log(arr)
+
+arr.push("ceia")
+console.log(arr)
+const refeiçãoNoturna = arr.slice(-2)
+console.log(refeiçãoNoturna)
+console.log(arr.length)
