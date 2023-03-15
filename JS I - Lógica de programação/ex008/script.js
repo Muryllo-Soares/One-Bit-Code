@@ -47,3 +47,7 @@ const removido = refeições.splice(3, 1, "janta")
 console.log(refeições)
 console.log(removido)
 
+for (let indice = 0; indice < refeições.length; indice++){
+    const elemento = refeições[indice]
+    console.log(elemento + " se encontra na posição " + indice)
+}
