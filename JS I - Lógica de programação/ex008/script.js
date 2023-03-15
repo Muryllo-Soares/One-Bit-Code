@@ -25,6 +25,7 @@ console.log(inclui)
 const indice = arr.indexOf("jantar")
 console.log(indice)
 
+// corta uma parte do array tanto do começo quanto do fim.
 const refeiçõesDia= arr.slice (0, 3)
 console.log(refeiçõesDia)
 console.log(arr)
@@ -33,4 +34,10 @@ arr.push("ceia")
 console.log(arr)
 const refeiçãoNoturna = arr.slice(-2)
 console.log(refeiçãoNoturna)
-console.log(arr.length)
+
+
+// junta dois ou mais arrays ou elementos e devolve o resultado sem alterar os array
+const refeições =refeiçõesDia.concat(refeiçãoNoturna, "lancinho da noite")
+console.log(refeições)
+console.log(refeiçõesDia)
+console.log(refeiçãoNoturna)
