@@ -41,3 +41,9 @@ const refeições =refeiçõesDia.concat(refeiçãoNoturna, "lancinho da noite")
 console.log(refeições)
 console.log(refeiçõesDia)
 console.log(refeiçãoNoturna)
+
+// Você pode substituir elementos em qualquer lugar dentro do array
+const removido = refeições.splice(3, 1, "janta")
+console.log(refeições)
+console.log(removido)
+
