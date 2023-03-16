@@ -1,28 +1,34 @@
-const pacientes = ["\n1° Muryllo", "\n2° Amanda", "\n3° Antonella", "\n4° Carmem", "\n5° Maria"]
+const pacientes = []
 let menu = ""
 
 do {
-    menu = prompt ("Lista de pacientes para ser atendido: " + pacientes + "\n\n Novo Paciente" + "\n Consultar Paciente" + "\n sair")
+
+    let paciente = ""
+    for (let i = 0 ; i < pacientes.length ; i++){
+        paciente += (i + 1) + "° - " + pacientes[i] + "\n"
+    }
+
+    menu = prompt ("Pacientes: \n " + paciente + "\n Novo Paciente" + "\n Consultar Paciente" + "\n sair")
 
     switch(menu){
-        case "Novo Paciente": {
+        case "Novo Paciente":
             let adicionar = prompt ("Informe o nome do novo paciente")
-            pacientes.push ("\n" + adicionar)
+            pacientes.push (adicionar)
             break
-        }
-        case "Consultar Paciente":{
-            alert ("Paciente " + pacientes[0]+ " atendido.")
-            pacientes.shift ([0])
+        case "Consultar Paciente":
+            const pacienteConsultado = pacientes.shift()
+            if(pacienteConsultado){
+                alert ("Paciente " + pacienteConsultado+ " atendido.")
+            }else{
+                alert("Não há pacientes na fila!")
+            }
             break
-        }
-        case "sair":{
+        case "sair":
             alert ("Saindo...")
             break
-        }
-        default:{
+        default:
             alert ("Opção Não encontrada")
-            break
-        }
+            break 
     }
 } while (menu !== "sair")
 
