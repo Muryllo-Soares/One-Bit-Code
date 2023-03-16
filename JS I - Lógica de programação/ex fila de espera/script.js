@@ -3,7 +3,7 @@ let menu = ""
 
 do {
     menu = prompt ("Lista de pacientes para ser atendido: " + pacientes + "\n\n Novo Paciente" + "\n Consultar Paciente" + "\n sair")
-S
+
     switch(menu){
         case "Novo Paciente": {
             let adicionar = prompt ("Informe o nome do novo paciente")
