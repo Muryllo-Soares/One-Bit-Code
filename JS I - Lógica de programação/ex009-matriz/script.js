@@ -24,4 +24,9 @@ const matriz = [
   ["l2, c1", "l2, c2", "l2, c3", "l2, c4"],
   ["l3, c1", "l3, c2", "l3, c3", "l3, c4"],
 ];
-console.table(matriz);
+
+
+for (i = 0 ; i < matriz.length ; i++){
+  let fila = matriz[i];
+  console.log(fila)
+}
