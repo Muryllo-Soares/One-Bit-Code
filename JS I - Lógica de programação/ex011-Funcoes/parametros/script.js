@@ -11,9 +11,10 @@ dizerOla("Muryllo")
 dizerOla()
 
 function soma(a, b){
-    console.log(a+b)
+    a+b
 }
 soma(7, 5)
+
 
 function parametroDoJeitoCerto(usuario){
 console.log(usuario)
