@@ -1,0 +1,2 @@
+let imoveis = []
+let opcao = ""
