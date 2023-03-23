@@ -49,3 +49,12 @@ function maioridade(idade) {
   console.log(maioridade(20))
   console.log(maioridade(13))
 
+function imc(peso, altura){
+    const p = peso
+    const a = altura*altura
+    return p / a
+   
+}
+
+console.log(imc(80, 1.75))
+console.log()
