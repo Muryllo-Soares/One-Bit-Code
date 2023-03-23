@@ -12,6 +12,7 @@ dizerOla()
 
 function soma(a, b){
     a+b
+
 }
 soma(7, 5)
 
