@@ -17,4 +17,4 @@ calculadora.subtrair = subtrair
 calculadora.multiplicar = function(a, b){
     return a * b
 }
-console.log(calculadora.multiplicar(8,8))
+console.log(calculadora.somar(8,8))
