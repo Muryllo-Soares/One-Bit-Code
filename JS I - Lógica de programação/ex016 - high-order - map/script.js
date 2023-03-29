@@ -35,4 +35,10 @@ const personagens = [
     }
     return valorAcumulado
   },{})
-  console.log(racas)
+  //console.log(racas)
+
+  personagens.sort(function(a, b){
+    return a.nivel - b.nivel
+  })
+
+  console.log(personagens)
