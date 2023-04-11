@@ -55,7 +55,6 @@ addTechBtn.addEventListener('click', function (ev){
     stackInputs.appendChild(newRow)
 })
 
-
 form.addEventListener('submit', function(ev){
     ev.preventDefault()
 
@@ -63,9 +62,9 @@ form.addEventListener('submit', function(ev){
     const inputRows = document.querySelectorAll('.inputRow')
 
     let tecnologies = []
-    inputRows.forEach(function(row){
-        const techName = document.querySelector('#' + row.id + 'input[name="techName"]').value
-        const techExp = document.querySelector('#' + row.id + 'input[type="radio"]:checked').value
+    inputRows.forEach(function (row) {
+        const techName = document.querySelector('#' + row.id + ' input[name="techName"]').value
+        const techExp = document.querySelector('#' + row.id + ' input[type="radio"]:checked').value
         tecnologies.push({name: techName, exp: techExp})
     })
 
