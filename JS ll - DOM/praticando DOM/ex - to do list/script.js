@@ -3,7 +3,6 @@ const inputText = document.getElementById('text')
 const ulList = document.getElementById('list')
 
 addBtn.addEventListener('click', function(){
-
     const newLi = document.createElement('li')
     newLi.className = 'newLi'
     const removeRowBtn = document.createElement('button')
