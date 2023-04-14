@@ -28,7 +28,7 @@ main{
     border-radius: 20px;
     padding: 20px;
     min-width: 50%;
-    min-height: 100%;
+    max-height: 100%;
     background-color: rgb(0, 0, 0);
     color: white;
 }
@@ -57,7 +57,9 @@ button#addBtn{
     background-color: rgb(49, 49, 49);
     color: white;
     cursor: pointer;
-
+}
+button#addBtn:hover{
+    background-color: rgb(92, 86, 86);
 }
 
 
@@ -71,8 +73,17 @@ li{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
     font-size: 1.3em;
+    background-color: rgba(255, 255, 255, 0.137);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    align-items: baseline;
+}
+li:hover{
+    background-color: rgba(255, 255, 255, 0.753);
+    color: black;
 }
 
 ul > li{
@@ -82,11 +93,16 @@ ul > li{
 .removeBtn{
     border-radius: 50% 50%;
     padding: 6px;
+    height: 100%;
     font-size: 0.8em;
     border: none;
     background-color: green;
     color: white;
     cursor: pointer;
+}
+
+.removeBtn:hover{
+    background-color: rgb(0, 71, 0);
 }
 
 
