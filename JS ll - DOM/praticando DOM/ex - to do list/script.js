@@ -7,7 +7,7 @@ addBtn.addEventListener('click', function(){
     newLi.className = 'newLi'
     const removeRowBtn = document.createElement('button')
     removeRowBtn.type = 'button'
-    removeRowBtn.innerText = ' Remover'
+    removeRowBtn.innerText = '✔'
     removeRowBtn.className = 'removeBtn'
 
     removeRowBtn.addEventListener('click', function(){
