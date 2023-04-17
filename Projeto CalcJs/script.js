@@ -36,13 +36,13 @@ document.getElementById("clear").addEventListener("click", function () {
   input.focus();
 });
 
-input.addEventListener("Keydown", function (ev) {
+input.addEventListener("keydown", function (ev) {
   ev.preventDefault();
-  if (allowedKeys.includes(ev.keys)) {
-    input.value += ev.keys;
+  if (allowedKeys.includes(ev.key)) {
+    input.value += ev.key;
     return;
   }
-  if (ev.keys === "Backspace") {
+  if (ev.key === "Backspace") {
     input.value = input.value.slice(0, -1);
   }
   if (ev.key == "Enter") {
