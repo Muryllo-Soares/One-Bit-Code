@@ -57,7 +57,11 @@ function getWinRegions() {
         document.querySelector('[data-region="' + region + '"]').classList.add('win')
     })
     const playerName = document.getElementById(turnPlayer).value
-    document.querySelector('h2').innerHTML = playerName + 'Venceu!'
+    document.querySelector('h2').innerHTML = playerName + ' Venceu!'
+    const player1 = document.getElementById('player1')
+    player1.value = ''
+    const player2 = document.getElementById('player2')
+    player2.value = ''
   }
 
   function headleBoardClick(ev){
