@@ -4,6 +4,11 @@ body{
     font-family: sans-serif;
 }
 
+#content{
+   display: grid;
+    place-content: center;
+}
+
 #gameBoard {
     background-color: #232323;
     display: grid;
@@ -23,6 +28,15 @@ body{
 
 #gameBoard span.win{
     background-color: #25a340;
+}
+
+.text-aling{
+    text-align: center;
+    font-weight: bolder;
+}
+
+#start{
+    margin-top: 2rem;
 }
 
 .cursor-pointer{
