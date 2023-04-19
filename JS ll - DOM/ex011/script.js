@@ -43,5 +43,4 @@ document.getElementById('cookie2Btn').addEventListener('click', function(){
     document.cookie = cookie + expiration + path
     input.value = ''
     console.log(document.cookie)
-
-   remove
+})
