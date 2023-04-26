@@ -7,7 +7,9 @@ const cadastro = {
 const {nome, idade, email} = cadastro
 
 function dados({nome, idade, email}){
+    const id = 10
    return{
+    id,
     nome,
     idade,
     email
