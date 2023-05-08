@@ -6,13 +6,10 @@ function birthday(date){
     const ageInYears = today.diff(birthday, 'year')
     const nextBirthday = birthday.add(ageInYears +1, 'year')
     const daysToNextBirthday = nextBirthday.diff(today, 'day') + 1
-    const test = today.add(7, 'year')
 
-    
     console.log(`Idade: ${ageInYears}`)
     console.log(`Próximo aniversário: ${nextBirthday.format('DD/MM/YYYY')}`)
     console.log(`Dias até completar ${ageInYears + 1} anos: ${daysToNextBirthday}`)
-    console.log(test.format('DD/MM/YYYY'))
 }
 
 birthday("1996-05-22")
