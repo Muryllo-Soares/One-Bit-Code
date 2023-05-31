@@ -1,2 +1,6 @@
 import './styles/style.css'
-alert('Hello, World!')
+const hello = () => { console.log('Hello, Word!')}
+
+hello()
+
+alert('hello')
