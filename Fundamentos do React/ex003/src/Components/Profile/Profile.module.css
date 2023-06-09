@@ -1,0 +1,17 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 90vh;
+    min-width: 50vw;
+    background-color: white;
+    border-radius: 1rem;
+
+}
+.card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+
