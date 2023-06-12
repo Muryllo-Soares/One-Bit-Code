@@ -11,9 +11,9 @@ export default function Profile({ avatar, title, name, bio, phone, email, GitHub
 
         <div className={style.profile}>
           <h2>{name}</h2>
-          <p>{bio}</p>
-          <p>{phone}</p>
-          <p>{email}</p>
+          <div>{bio}</div>
+          <div>{phone}</div>
+          <div>{email}</div>
         </div>
 
         <br />
