@@ -14,6 +14,7 @@ export default function Profile({ avatar, title, name, bio, phone, email, GitHub
           <div>{bio}</div>
           <div>{phone}</div>
           <div>{email}</div>
+          <div></div>
         </div>
 
         <br />
