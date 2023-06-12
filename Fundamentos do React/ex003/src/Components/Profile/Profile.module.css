@@ -14,4 +14,42 @@
   border-radius: 50%;
 }
 
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.profile h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.link{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  
+
+}
+
+.link a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background: linear-gradient(to right, #2476c0, #6bc2e2);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  width: 150px;
+  margin-bottom: 10px;
+  
+
+  
+}
+
 
