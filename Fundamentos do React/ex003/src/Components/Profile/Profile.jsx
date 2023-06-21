@@ -1,29 +1,46 @@
 /* eslint-disable react/prop-types */
 import style from "./Profile.module.css";
+import Title from "../Title/Title.jsx";
+import ProfileSection  from "./ProfileSection"
 
-export default function Profile({ avatar, title, name, bio, phone, email, GitHub, Linkedin, twitter }) {
+export default function Profile({
+  avatar,
+  title,
+  name,
+  bio,
+  phone,
+  email,
+  GitHub,
+  Linkedin,
+  twitter,
+}) {
   return (
-      <div className={style.card}>
+    <div className={style.card}>
+      <br />
 
-        <br />
+      <img src={avatar} alt={title} />
 
-        <img  src={avatar} alt={title} />
-
-        <div className={style.profile}>
-          <h2>{name}</h2>
-          <div>{bio}</div>
-          <div>{phone}</div>
-          <div>{email}</div>
-          <div></div>
-        </div>
-
-        <br />
-
-        <div className={style.link}>
-        <a href="https://github.com/Muryllo-Soares">{GitHub}</a>
-        <a href="https://www.linkedin.com/in/muryllo-soares-76a981118/">{Linkedin}</a>
-        <a href="https://twitter.com/Muzer41">{twitter}</a>
-        </div>
+      <div className={style.profile}>
+        <Title>
+        <span>{name}</span>
+        <button>Follow</button>
+        </Title>
+        <ProfileSection>{bio}</ProfileSection>
+        <ProfileSection>{phone}</ProfileSection>
+        <ProfileSection>{email}</ProfileSection>
       </div>
+
+      <br />
+
+      <ProfileSection>
+      <div className={style.link}>
+        <a href="https://github.com/Muryllo-Soares">{GitHub}</a>
+        <a href="https://www.linkedin.com/in/muryllo-soares-76a981118/">
+          {Linkedin}
+        </a>
+        <a href="https://twitter.com/Muzer41">{twitter}</a>
+      </div>
+      </ProfileSection>
+    </div>
   );
 }
