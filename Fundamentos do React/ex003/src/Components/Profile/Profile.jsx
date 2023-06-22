@@ -32,14 +32,18 @@ export default function Profile({
 
       <br />
 
-      <ProfileSection>
-      <div className={style.link}>
+      <ProfileSection
+      className={style.link}
+      id = "link-section"
+      data-test="some value"
+      aria-label="social link"
+      >
         <a href="https://github.com/Muryllo-Soares">{GitHub}</a>
         <a href="https://www.linkedin.com/in/muryllo-soares-76a981118/">
           {Linkedin}
         </a>
         <a href="https://twitter.com/Muzer41">{twitter}</a>
-      </div>
+      
       </ProfileSection>
     </div>
   );
