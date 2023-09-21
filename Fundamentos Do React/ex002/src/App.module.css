@@ -1,0 +1,38 @@
+.container {
+    width:80%;
+    height: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    margin: 15px;
+    padding:10px;
+    align-items: center;
+    background-color: #d7e1e7;
+    border-radius: 16px;
+}
+
+.title{
+    font-size: 2rem;
+    
+}
+.card{
+    height: 300px;
+    border: 7px solid black; 
+}
+
+.button {
+    background-color: rgb(14, 13, 13);
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color:rgb(27, 26, 26) ;
+    
+    
+}
