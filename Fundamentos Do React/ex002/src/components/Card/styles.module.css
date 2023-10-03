@@ -21,20 +21,3 @@
     border: 7px solid black; 
 }
 
-.button {
-    background-color: rgb(14, 13, 13);
-    color: white;
-    font-size: medium;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    transition: .3s;
-}
-
-.button:hover{
-    cursor: pointer;
-    background-color:rgb(27, 26, 26) ;
-    margin-left: .5rem;
-    
-    
-}
