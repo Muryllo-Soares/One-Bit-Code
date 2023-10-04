@@ -14,6 +14,7 @@ export default function App(){
         linkedinUrl = "https://www.linkedin.com/in/muryllo-soares-76a981118/"
         twitterUrl = "https://twitter.com/home"
       />
+  
     </div>
   )
 }
