@@ -1,20 +1,26 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/prop-types */
+import LinkButton from "../LinkButton"
+import ProfileSection from "../ProfileSection"
+import Title from "../Title"
 import style from "./style.module.css"
 
 export default function Profile(props){
     return (
         <div className={style.container}>
             <img className={style.avatar} src={props.avatar} alt={props.name} />
-            <h2 className={style.name}>{props.name}</h2>
-            <div>{props.bio}</div>
-            <div>{props.phone}</div>
-            <div>{props.email}</div>
+            <Title className={style.name}>{props.name}</Title>
+            <ProfileSection>{props.bio}</ProfileSection>
+            <ProfileSection>{props.phone}</ProfileSection>
+            <ProfileSection>{props.email}</ProfileSection>
+            <ProfileSection>
             <div className={style.links}>
-                <a href={props.githubUrl} target="_blank" >GitHub</a>
-                <a href={props.linkedinUrl} target="_blank">LinkedIn</a>
-                <a href={props.twitterUrl} target="_blank">Twitter</a>
+                <LinkButton href={props.githubUrl}>GitHub</LinkButton>
+                <LinkButton href={props.linkedinUrl}>LinkedIn</LinkButton>
+                <LinkButton href={props.twitterUrl}>Twitter</LinkButton>
             </div>
+            </ProfileSection>
+         
         </div>
        
     )
