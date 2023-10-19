@@ -12,7 +12,7 @@ import style from "./style.module.css"
 export default function Profile(props){
             //valor / função que altera valor
     const [followText, setfollowText] = useState("Follow")
-    function hundleClick (ev){
+    function hundleClick (){
         alert("Agora você está seguindo")
         setfollowText("Following")
     }
