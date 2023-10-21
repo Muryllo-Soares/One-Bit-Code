@@ -6,15 +6,16 @@ function App() {
   const [copiar, setCopiar] = useState("Copiar")
   const [gerar, setGerar] = useState()
 
- 
-
-  
+ function handleClick(){
+  setGerar("_YBw#RF&WHUM")
+  setCopiar("Copiar")
+ }
 
   return (
     <>
       <h1>Gerador de senhas</h1>
       <div className="card">
-        <button onClick={() => setGerar("_YBw#RF&WHUM")}>
+        <button onClick={() => handleClick()}>
           Gerar! 
         </button>
 
